@@ -53,5 +53,5 @@ def twoNumberSum3(array, targetSum):
 
 arr = input("")
 array = [int(i) for i in arr.split()]
-target = int(input(""))
+target = int(input())
 print(twoNumberSum3(array, target))

@@ -48,7 +48,7 @@ def threeNumberSum2(array, targetSum):
     return ans
 
 
-arr = input("")
+arr = input()
 array = [int(i) for i in arr.split()]
-target = int(input(""))
+target = int(input())
 print(threeNumberSum(array, target))

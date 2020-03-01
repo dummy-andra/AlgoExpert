@@ -32,7 +32,7 @@ def fourNumberSum(array, targetSum):
     return quadruplets
 
 
-arr = input("")
+arr = input()
 array = [int(i) for i in arr.split()]
-target = int(input(""))
+target = int(input())
 print(fourNumberSum(array, target))
