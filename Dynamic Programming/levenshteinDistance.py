@@ -42,3 +42,6 @@ def levenshteinDistance2(str1, str2):
             else:
                 currentEdits[j] = 1 + min(previousEdits[j - 1], previousEdits[j], currentEdits[j - 1])
     return evenEdits[-1] if len(big) % 2 == 0 else oddEdits[-1]
+
+
+print(levenshteinDistance2("abc", "yabd"))
