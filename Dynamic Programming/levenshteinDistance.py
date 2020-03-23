@@ -1,7 +1,11 @@
 """
 Levenshtein Distance
 
-Write a function that takes in two strings and returns the minimum number of edit operations that need to be performed on the first string to obtain the second string. There are three edit operations: insertion of a character, deletion of a character, and substitution of a character for another.
+Write a function that takes in two strings and returns the minimum number of edit operations
+that need to be performed on the first string to obtain the second string.
+
+There are three edit operations: insertion of a character, deletion of a character, and
+substitution of a character for another.
 
 Sample input: "abc", "yabd"
 Sample output: 2 (insert "y"; substitute "c" for "d")
@@ -27,7 +31,7 @@ def levenshteinDistance2(str1, str2):
     small = str1 if len(str1) < len(str2) else str2
     big = str1 if len(str1) >= len(str2) else str2
     evenEdits = [x for x in range(len(small) + 1)]
-    oddEdits = [None for x in range(len(small) + 1)]
+    oddEdits = [None for _ in range(len(small) + 1)]
     for i in range(1, len(big) + 1):
         if i % 2 == 1:
             currentEdits = oddEdits
